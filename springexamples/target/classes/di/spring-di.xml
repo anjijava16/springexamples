@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- DI using constructor -->
+    <bean id="doWork" class="com.dok.spring.di.OfficeWork" />
+    <bean id="employee" class="com.dok.spring.di.Employee">
+    <constructor-arg ref="doWork"/>
+    </bean>
+    <!-- DI using constructor END-->
+    
+    
+    <!-- DI using setter method -->
+    <bean id="clerk"  class="com.dok.spring.di.Clerk">
+    <property name="work" ref="doWork" />
+    </bean>
+    <!-- DI using setter END-->
+
+    
+    
+
+</beans>

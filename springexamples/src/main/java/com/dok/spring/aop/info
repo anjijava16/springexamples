@@ -1,0 +1,13 @@
+
+To Understand AOP(Aspect Oriented Programming), we need to understand Cross Cutting Concerns in software development . 
+In every project , there is some amount of code which gets repeated in multiple classes , 
+across several modules.For example logging which needs to be done for almost all classes and 
+for all module.
+This kind of code reduces code's re usability , maintainability and scalability.For example ,
+ if you want to take the class and reuse it somewhere else , where logging is not needed , 
+ you have to change this class . Similarly, if validation or logging is changed , we have to 
+ change almost each and every class wherever this is used .
+A class should focus on it's core functionality , things like logging ,validation , 
+transaction etc are not part of class functionality .
+Aspect Oriented Programming is the paradigm to help us removing these cross cutting concerns. 
+It provides us the tools and methodology to separate our cross cutting code from classes

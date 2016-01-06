@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- collections as di -->
+<bean id="admins" class="com.dok.spring.diadvanced.Admins">
+<property name="adminnames" >
+<props>
+<prop key="1">vijay</prop>
+<prop key="2">ramesh</prop>
+<prop key="3">sujay</prop>
+</props>
+</property>
+<property name="adminlist" >
+<list>
+<value>vijay</value>
+<value>ramesh</value>
+<value>suresh</value>
+</list>
+</property>
+<property name="adminset" >
+<set>
+<value>vijay</value>
+<value>ramesh</value>
+<value>suresh</value>
+</set>
+</property>
+<property name="adminmap" >
+<map>
+<entry key="1" value="vijay" />
+<entry key="2" value="ramesh" />
+<entry key="3" value="suresh" />
+</map>
+</property>
+
+</bean>
+    
+    
+
+</beans>

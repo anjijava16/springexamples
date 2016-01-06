@@ -1,0 +1,6 @@
+Kinded designators are those which select a particular kind of join point. For example: execution, get, set, call, handler
+Scoping designators are those which select a group of join points of interest (of probably many kinds). For example: within, withincode
+Contextual designators are those that match (and optionally bind) based on context. For example: this, target, @annotation
+
+Scoping designators are very fast to match and their usage means AspectJ can very quickly dismiss groups of join points that should not be further processed - 
+that is why a good pointcut should always include one if possible.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- CONTEXT CONFIG USING ANOTATIONS -->  
+   <context:annotation-config/>
+   	<!-- 
+<context:annotation-config/> only looks for annotations on beans in the same application context in which it is 
+defined. This means that, if you put <context:annotation-config/> in a WebApplicationContext for a DispatcherServlet, 
+it only checks for @Autowired beans in your controllers, and not your services.
+	--> 
+	  
+	 
+    
+   <bean id="student" class="com.dok.spring.annotationconfig.Student" />
+   <bean id="showstudent" class="com.dok.spring.annotationconfig.ShowStudent" />
+   <bean id="studentmarks" class="com.dok.spring.annotationconfig.StudentMarks" />
+   
+</beans>
